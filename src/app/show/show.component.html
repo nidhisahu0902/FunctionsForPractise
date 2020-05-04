@@ -1,0 +1,11 @@
+<form *ngFor="let item of members;let i=index">
+        {{i+1}}
+        <br>
+        {{item.name}}<br>
+        
+        <br>
+        {{item.age}}
+        <button (click)="del(i)">Delete</button>
+        <button (click)="edit()">edit</button>
+        <br>
+        </form>
